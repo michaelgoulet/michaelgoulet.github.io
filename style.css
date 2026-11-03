@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+
+/* --- CUSTOM COLOR PALETTE --- */
+:root {
+    font-size: 1.2em;
+    --bg-color: #070007;
+    /* Very Dark Purple (Background) */
+    --text-color: #FFFFFF;
+    /* White (Main Output) */
+    --prompt-color: white;
+    /* Orange/Red (Command Prompt) */
+    --accent-color: #77216F;
+    /* Deep Purple (Borders, accents) */
+    --link-color: #E95420;
+    /* White for links (high contrast) */
+    --secondary-text: #333333;
+    /* Dark Gray for less important text */
+    font-family: 'IBM Plex Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* --- GLOBAL STYLES --- */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-mono);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+::selection{
+    background-color: #efffef;
+    color: #070007;
+}
+
+ul {
+    margin: 0 0 0 0;
+}
+
+li {
+    list-style-type: "> ";
+}
+
+h1 {
+    margin: 0 0 0 0;
+}
+h2 {
+    margin: 0 0 0 0;
+}
+h3 {
+    margin: 0;
+}
+
+#picOfMe {
+    width: 140px;
+}
+
+
+/* --- TERMINAL CONTAINER --- */
+.terminal-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    border: 1px solid var(--accent-color);
+    /* Subtle border instead of a glow */
+    padding: 25px;
+    background-color: #100010;
+    /* Slightly transparent dark background */
+}
+
+
+.command {
+    color: var(--prompt-color);
+    display: block;
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+
+.output {
+    color: var(--text-color);
+    white-space: wrap;
+    /* font-size: 1em; */
+}
+
+
+/* Styling for Links within Output */
+.output a {
+    color: var(--link-color);
+    text-decoration: none;
+    /* Minimal shadow/underline for a cleaner look */
+    text-shadow: none;
+}
+
+.output a:hover {
+    color: var(--prompt-color);
+    /* Change hover color to the prompt color */
+    text-decoration: underline;
+}
+
+.pages {
+    margin: 0 10px 0 0;
+}
