@@ -1,13 +1,14 @@
 @import url('https://api.fonts.coollabs.io/css2?family=Ubuntu&display=swap');
+@import url('https://api.fonts.coollabs.io/css2?family=Ubuntu+Mono&display=swap');
 
 
 :root {
-    color: midnightblue;
-    background-color: #F1EDE0;
-    --bg-color: lightblue;
-    --header-text-color: darkblue;
-    --p-text-color: midnightblue;
-    font-family: 'Ubuntu', Helvetica, sans-serif;
+    color: #772953;
+    background-color: #000000;
+    --bg-color: #2C001E;
+    --header-text-color: #E95420;
+    --p-text-color: #ffffff;
+    font-family: 'Ubuntu Mono', Helvetica, sans-serif;
     --main-radius: 5px;
     --shadow-color: #3B2D21;
 }
@@ -21,7 +22,6 @@ body {
 
 .footer-content {
     padding: 5px;
-    background-color: #F1EDE0;
     border-radius: 5px;
 }
 
